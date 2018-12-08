@@ -1,5 +1,8 @@
 package com.wizard;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *  Task 1:
  *  Wizard class must have fields.
@@ -14,5 +17,49 @@ package com.wizard;
  */
 public class Wizard {
 
+    private int health = 100;
+    private int money = 100;
+    private String name;
+    private String surename;
+    List<String> listOfSpellsWizardOwns = new ArrayList<>();
 
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurename() {
+        return surename;
+    }
+
+    public void setSurename(String surename) {
+        this.surename = surename;
+    }
+
+    public List<String> getListOfSpellsWizardOwns() {
+        return listOfSpellsWizardOwns;
+    }
+
+    public void setListOfSpellsWizardOwns(List<String> listOfSpellsWizardOwns) {
+        this.listOfSpellsWizardOwns = listOfSpellsWizardOwns;
+    }
 }
